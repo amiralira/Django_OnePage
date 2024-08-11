@@ -1,8 +1,9 @@
 from django.urls import path
-from LandingPage.views import index_view
+from LandingPage.views import *
 
-APP_NAME = 'LandingPage'
+app_name = 'LandingPage'
 
 urlpatterns = [
     path('', index_view, name='index'),
+    path('index/en/', index_view_en, name='index_en'),
 ]
